@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+/* react-router-dom */
+import { Routes, Route } from "react-router-dom";
+
+/*components */
 import { NavBarComponent } from "./Components/nav-bar";
 import { HeroComponent } from "./Components/hero-component";
 
@@ -27,7 +31,9 @@ function App() {
           showMenu={showMenu}
           menuClickHandler={menuClickHandler}
         />
-        <HeroComponent />
+        <Routes>
+          <Route path="/" element={<HeroComponent />} />
+        </Routes>
       </div>
     </div>
   );
