@@ -5,4 +5,22 @@
 
 .App {
   text-align: center;
+  background-image: url('/public/assets/home/background-home-mobile.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+
+/* NavBarComponent */
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 0 3em 0;
 }
