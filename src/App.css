@@ -16,7 +16,8 @@ font-family: 'Bellefair', serif;
   background-image: url('/public/assets/home/background-home-mobile.jpg');
   background-size: cover;
   background-position: top;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
 }
 .container {
   width: 90%;
@@ -32,6 +33,51 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1.5em 0 3em 0;
+}
+
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 254px;
+  height: 100vh;
+  overflow: hidden;
+}
+.close-icon {
+  position: relative;
+  top: 40px;
+  right: -90px;
+}
+.mobile-menu-div {
+  /* border: 1px solid red; */
+  position: relative;
+  top: 11.5%;
+  width: 85%;
+  margin-left: auto;
+}
+.mobile-menu-div ul {
+  list-style: none;
+  text-align: left;
+}
+.mobile-menu-div span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.mobile-menu-div li {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+.mobile-menu-div li:hover {
+  border-right: 4px solid #fff;
+  height: 21px;
 }
 
 /* HeroComponent */
@@ -74,3 +120,4 @@ img {
   margin-top: 81px;
   text-transform: uppercase;
 }
+

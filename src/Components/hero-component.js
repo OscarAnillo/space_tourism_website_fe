@@ -1,7 +1,7 @@
 export const HeroComponent = () => {
   return (
     <section className="hero">
-      <div classNam="hero-text">
+      <div className="hero-text">
         <div>
           <p className="hero-text-first">So, you want to travel to</p>
           <h1 className="hero-space-title">Space</h1>
