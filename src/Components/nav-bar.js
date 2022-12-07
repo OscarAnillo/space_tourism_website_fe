@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav-row">
         <div>
           <img src="assets/shared/logo.svg" alt="" />
@@ -23,7 +23,7 @@ export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
                   <span>00</span> Home
                 </li>
               </Link>
-              <Link to="destination">
+              <Link to="destinations">
                 <li>
                   <span>01</span> Destination
                 </li>

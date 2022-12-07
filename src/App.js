@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 /*components */
 import { NavBarComponent } from "./Components/nav-bar";
 import { HeroComponent } from "./Components/hero-component";
+import { DestinationComponent } from "./Components/destinations-component";
 
 import "./App.css";
 
@@ -26,15 +27,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <NavBarComponent
-          showMenu={showMenu}
-          menuClickHandler={menuClickHandler}
-        />
-        <Routes>
-          <Route path="/" element={<HeroComponent />} />
-        </Routes>
-      </div>
+      <NavBarComponent
+        showMenu={showMenu}
+        menuClickHandler={menuClickHandler}
+      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HeroComponent
+              showMenu={showMenu}
+              menuClickHandler={menuClickHandler}
+            />
+          }
+        ></Route>
+        <Route path="/destinations" element={<DestinationComponent />}></Route>
+      </Routes>
     </div>
   );
 }
