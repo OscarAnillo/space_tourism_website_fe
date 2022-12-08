@@ -8,6 +8,7 @@ import { NavBarComponent } from "./Components/nav-bar";
 import { HeroComponent } from "./Components/hero-component";
 import { DestinationComponent } from "./Components/destinations-component";
 import { CrewComponent } from "./Components/crew-components";
+import { TechComponent } from "./Components/tech-conponent";
 
 import "./App.css";
 
@@ -44,6 +45,7 @@ function App() {
         ></Route>
         <Route path="/destinations" element={<DestinationComponent />}></Route>
         <Route path="/crew" element={<CrewComponent />} />
+        <Route path="/technology" element={<TechComponent />} />
       </Routes>
     </div>
   );
