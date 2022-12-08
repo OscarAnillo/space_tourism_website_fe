@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import { NavBarComponent } from "./Components/nav-bar";
 import { HeroComponent } from "./Components/hero-component";
 import { DestinationComponent } from "./Components/destinations-component";
+import { CrewComponent } from "./Components/crew-components";
 
 import "./App.css";
 
@@ -42,6 +43,7 @@ function App() {
           }
         ></Route>
         <Route path="/destinations" element={<DestinationComponent />}></Route>
+        <Route path="/crew" element={<CrewComponent />} />
       </Routes>
     </div>
   );

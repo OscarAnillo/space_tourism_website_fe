@@ -21,7 +21,7 @@ export const DestinationComponent = () => {
           <img src={image} alt="" className="img-destination" />
           <div>
             {data.destinations.map((item) => (
-              <div className="map-destination">
+              <div key={item.name} className="map-destination">
                 <ul>
                   <li
                     onClick={() =>
