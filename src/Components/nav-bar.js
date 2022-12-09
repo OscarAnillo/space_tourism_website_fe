@@ -18,26 +18,26 @@ export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
           </div>
           <div className="mobile-menu-div">
             <ul>
-              <Link to="/">
-                <li>
+              <li>
+                <Link to="/">
                   <span>00</span> Home
-                </li>
-              </Link>
-              <Link to="destinations">
-                <li>
+                </Link>
+              </li>
+              <li>
+                <Link to="destinations">
                   <span>01</span> Destination
-                </li>
-              </Link>
-              <Link to="crew">
-                <li>
+                </Link>
+              </li>
+              <li>
+                <Link to="crew">
                   <span>02</span> Crew
-                </li>
-              </Link>
-              <Link to="technology">
-                <li>
+                </Link>
+              </li>
+              <li>
+                <Link to="technology">
                   <span>03</span> Technology
-                </li>
-              </Link>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

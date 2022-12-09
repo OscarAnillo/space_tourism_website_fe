@@ -10,6 +10,7 @@ export const TechComponent = () => {
   });
 
   const { image, name, description } = techData;
+
   return (
     <div className="tech-bg">
       <div>
@@ -30,7 +31,7 @@ export const TechComponent = () => {
                     })
                   }
                 >
-                  1
+                  {item.id}
                 </button>
               </div>
             ))}
