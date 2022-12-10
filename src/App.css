@@ -33,7 +33,9 @@ img {
   padding: 1.5em 0 3em 0;
   width: 90%;
 }
-
+.desktop-menu {
+  display: none;
+}
 .mobile-menu {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
@@ -161,7 +163,6 @@ img {
   display: inline-block;
 }
 .text-destinations {
-  /* border: 1px solid red; */
   padding-top: 8.5em;
   text-align: center;
 }
@@ -333,6 +334,9 @@ img {
   line-height: 26px;
   color: #D0D6F9;
 }
+.image-crew-tablet {
+  display: none;
+}
 
 /* TechComponent */ 
 .tech-bg {
@@ -430,6 +434,7 @@ img {
     margin-left: 34px;
   }
   .desktop-menu {
+    display: block;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     color: #fff;
@@ -590,5 +595,131 @@ img {
     font-weight: 400;
     line-height: 32px;
     text-transform: uppercase;
+  }
+
+  /* Crew Component */
+  .bg-crew {
+    background-image: url("/public/assets/crew/background-crew-tablet.jpg");
+  }
+  .text-crew {
+    padding-top: 8.5em;
+    /* position: relative; */
+    /* background-color: red; */
+  }
+  .meet-crew-p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+  }
+  .meet-crew-p span {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;                
+    opacity: 0.25;
+  }
+  .image-crew {
+    display: none;
+  }
+  .border-div {
+    border-top: none;
+  }
+  .map-div-crew {
+    display: inline-block;
+    width: 5%;
+  }
+  .map-div-crew button {
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    padding: .5em;
+    opacity: 0.17;
+    z-index: 1;
+    position: absolute;
+    top: 45%
+  }
+  .map-div-crew button:hover {
+    opacity: 1;
+  }
+  .role-crew {
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin-top: 1em;
+  }
+  .role-name {
+    font-size: 2.5rem;
+    line-height: 46px;
+  }
+  .role-bio {
+    line-height: 26px;
+    color: #D0D6F9;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .image-crew-tablet {
+    display: block;
+    width: 360px;
+    position: absolute;
+    top: 58%;
+    left: 30%;
+  }
+
+  /* TechComponent */ 
+  .tech-bg {
+    background-image: url("/public/assets/technology/background-technology-tablet.jpg");
+  }
+  .tech-text {
+    padding-top: 8.5em;
+  }
+  .space-launch-p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+    padding-left: 2.1em;
+  }
+  .space-launch-p span {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .tech-image {
+    margin-top: 2em;
+  }
+  .map-div-tech {
+    display: inline-block;
+    width: 10%;
+  }
+  .map-div-tech button {
+    border: 1px solid #fff;
+    font-size: 1.5rem;
+    width: 58px;
+    height: 58px;
+    margin: 36px 0 24px 0;
+  }
+  .map-div-tech button:hover {
+    background-color: #fff;
+    color: #0B0D17;
+  }
+  .terminology {
+    letter-spacing: 2.7px;
+    line-height: 19px;
+  }
+  .name {
+    font-size: 2.5rem;
+    line-height: 56px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
+  .description {
+    color: #D0D6F9;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+    margin: 16px auto 0 auto ;
+    width: 60%;
   }
 }
