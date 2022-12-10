@@ -43,7 +43,7 @@ function App() {
             />
           }
         ></Route>
-        <Route path="/destinations" element={<DestinationComponent />}></Route>
+        <Route path="/destinations" element={<DestinationComponent />} />
         <Route path="/crew" element={<CrewComponent />} />
         <Route path="/technology" element={<TechComponent />} />
       </Routes>

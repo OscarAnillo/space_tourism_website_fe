@@ -418,3 +418,85 @@ img {
   margin: 19px auto 0 auto ;
   width: 80%;
 }
+
+
+@media(min-width: 700px) {
+  /* NavBarComponent */
+  .nav-row {
+    padding: 0;
+    width: 100%;
+  }
+  .nav-logo {
+    margin-left: 34px;
+  }
+  .desktop-menu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    color: #fff;
+    padding: 2.84375em 2em;
+  }
+  .desktop-menu ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .desktop-menu ul li {
+    margin-right: 2em;
+  }
+  .mobile {
+    display: none;
+  }
+
+  /* HeroComponent */
+  .hero {
+    background-image: url('/public/assets/home/background-home-tablet.jpg');
+    background-position: center;
+  }
+  .hero-text-first {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    line-height: 19px;
+    padding-top: 8.5em;
+    text-transform: uppercase;
+  }
+  .hero-space-title {
+    color: #fff;
+    font-family: 'Bellefair', serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 100px;
+    padding: .2em 0;
+    text-transform: uppercase;
+  }
+  .hero-text-second {
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+  .explore {
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #0B0D17;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    padding: 68px 27.5px 59px 29.5px;
+    margin-top: 81px;
+    text-transform: uppercase;
+  }
+  
+}

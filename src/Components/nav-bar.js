@@ -5,10 +5,22 @@ export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
     <nav className="nav">
       <div className="nav-row">
         <div>
-          <img src="assets/shared/logo.svg" alt="" />
+          <img src="assets/shared/logo.svg" alt="" className="nav-logo" />
         </div>
-        <div onClick={menuClickHandler}>
-          <img src="assets/shared/icon-hamburger.svg" alt="" />
+        <div className="desktop-menu">
+          <ul>
+            <li>Home</li>
+            <li>Destination</li>
+            <li>Crew</li>
+            <li>Technology</li>
+          </ul>
+        </div>
+        <div className="mobile">
+          <img
+            src="assets/shared/icon-hamburger.svg"
+            alt=""
+            onClick={menuClickHandler}
+          />
         </div>
       </div>
       {showMenu && (
