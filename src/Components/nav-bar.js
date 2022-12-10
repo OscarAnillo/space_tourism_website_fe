@@ -9,10 +9,18 @@ export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
         </div>
         <div className="desktop-menu">
           <ul>
-            <li>Home</li>
-            <li>Destination</li>
-            <li>Crew</li>
-            <li>Technology</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="destinations">Destination</Link>
+            </li>
+            <li>
+              <Link to="crew">Crew</Link>
+            </li>
+            <li>
+              <Link to="technology">Technology</Link>
+            </li>
           </ul>
         </div>
         <div className="mobile">

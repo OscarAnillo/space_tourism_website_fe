@@ -433,7 +433,7 @@ img {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     color: #fff;
-    padding: 2.84375em 2em;
+    padding: 2.84375em 2em 0 2em;
   }
   .desktop-menu ul {
     display: flex;
@@ -448,6 +448,15 @@ img {
   }
   .desktop-menu ul li {
     margin-right: 2em;
+    padding-bottom: 2.5em;
+    
+  }
+  .desktop-menu ul li:hover {
+    border-bottom: 3px solid #fff;
+  }
+  .desktop-menu ul li a {
+    color: #FFF;
+    text-decoration: none;
   }
   .mobile {
     display: none;
@@ -458,45 +467,32 @@ img {
     background-image: url('/public/assets/home/background-home-tablet.jpg');
     background-position: center;
   }
+  .hero-text {
+    padding-top: 1em;
+  }
+
   .hero-text-first {
     color: #D0D6F9;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 2.7px;
-    line-height: 19px;
-    padding-top: 8.5em;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 3.375px;
+    line-height: 24px;
   }
   .hero-space-title {
-    color: #fff;
-    font-family: 'Bellefair', serif;
-    font-size: 5rem;
+    font-size: 9.375rem;
     font-weight: 400;
     line-height: 100px;
-    padding: .2em 0;
+    padding: .16em 0;
     text-transform: uppercase;
   }
   .hero-text-second {
-    color: #D0D6F9;
-    font-family: 'Barlow', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6em;
+    margin: 0 auto;
+    width: 60%; 
   }
   .explore {
-    border: none;
-    border-radius: 100%;
-    background-color: #fff;
-    color: #0B0D17;
-    font-family: 'Bellefair', serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 23px;
-    letter-spacing: 1.25px;
-    padding: 68px 27.5px 59px 29.5px;
-    margin-top: 81px;
-    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 37px;
+    letter-spacing: 2px;
+    padding: 103px 48px 102px 46px;
+    margin-top: 106px;
   }
-  
 }
