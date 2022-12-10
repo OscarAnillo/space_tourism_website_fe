@@ -495,4 +495,100 @@ img {
     padding: 103px 48px 102px 46px;
     margin-top: 106px;
   }
+
+  /* DestinationComponent */
+  .bg-destinations {
+    background-image: url("/public/assets/destination/background-destination-tablet.jpg");
+    background-position: center;
+  }
+  .pick-destination {
+    font-size: 1.25rem;
+    letter-spacing: 3.375px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .pick-destination span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 3.375px;
+    line-height: 24px;
+  }
+  .map-destination {
+    display: inline-block;
+  }
+  .text-destinations {
+    padding-top: 6.8em;
+    text-align: center;
+  }
+  .img-destination {
+    margin-top: 40px;
+    margin-bottom: 53px;
+    width: 300px;
+    height: 300px;
+  }
+  .map-destination {
+    width: 11.5%;
+  }
+  .map-destination ul li {
+    color: #fff;
+    letter-spacing: 2.7px;
+    padding-bottom: .5em;
+  }
+  .map-destination ul li:hover {
+    border-bottom: 4px solid #fff;
+  }
+  .name-destination {
+    font-size: 5rem;
+    line-height: 92px;
+    margin-top: 10px;
+  }
+  .description {
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .top-line {
+    border-top: 1px solid #383B4B;
+    padding: 1.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .avg-distance {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.3625px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-bottom: 0em;
+  }
+  .destination-distance {
+    color: #fff;
+    font-family: 'Bellefair', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  .est-travel {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.3625px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-top: 0em;
+    padding-bottom: 12px;
+  }
+  .destination-travel {
+    color: #fff;
+    font-family: 'Bellefair', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
 }
