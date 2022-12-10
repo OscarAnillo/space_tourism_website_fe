@@ -42,6 +42,7 @@ export const CrewComponent = () => {
             <h2 className="role-name">{name}</h2>
             <p className="role-bio">{bio}</p>
           </div>
+          <img src={image} alt="" className="image-crew-tablet" />
         </div>
       </div>
     </div>

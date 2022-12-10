@@ -1,4 +1,4 @@
-export const HeroComponent = ({ showMenu, menuClickHandler }) => {
+export const HeroComponent = () => {
   return (
     <section className="hero">
       <div className="container">

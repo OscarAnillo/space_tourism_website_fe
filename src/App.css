@@ -33,7 +33,9 @@ img {
   padding: 1.5em 0 3em 0;
   width: 90%;
 }
-
+.desktop-menu {
+  display: none;
+}
 .mobile-menu {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
@@ -161,7 +163,6 @@ img {
   display: inline-block;
 }
 .text-destinations {
-  /* border: 1px solid red; */
   padding-top: 8.5em;
   text-align: center;
 }
@@ -333,6 +334,9 @@ img {
   line-height: 26px;
   color: #D0D6F9;
 }
+.image-crew-tablet {
+  display: none;
+}
 
 /* TechComponent */ 
 .tech-bg {
@@ -417,4 +421,305 @@ img {
   line-height: 26px;
   margin: 19px auto 0 auto ;
   width: 80%;
+}
+
+
+@media(min-width: 700px) {
+  /* NavBarComponent */
+  .nav-row {
+    padding: 0;
+    width: 100%;
+  }
+  .nav-logo {
+    margin-left: 34px;
+  }
+  .desktop-menu {
+    display: block;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    color: #fff;
+    padding: 2.84375em 2em 0 2em;
+  }
+  .desktop-menu ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .desktop-menu ul li {
+    margin-right: 2em;
+    padding-bottom: 2.5em;
+    
+  }
+  .desktop-menu ul li:hover {
+    border-bottom: 3px solid #fff;
+  }
+  .desktop-menu ul li a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  .mobile {
+    display: none;
+  }
+
+  /* HeroComponent */
+  .hero {
+    background-image: url('/public/assets/home/background-home-tablet.jpg');
+    background-position: center;
+  }
+  .hero-text {
+    padding-top: 1em;
+  }
+
+  .hero-text-first {
+    color: #D0D6F9;
+    font-size: 1.5rem;
+    letter-spacing: 3.375px;
+    line-height: 24px;
+  }
+  .hero-space-title {
+    font-size: 9.375rem;
+    font-weight: 400;
+    line-height: 100px;
+    padding: .16em 0;
+    text-transform: uppercase;
+  }
+  .hero-text-second {
+    margin: 0 auto;
+    width: 60%; 
+  }
+  .explore {
+    font-size: 2rem;
+    line-height: 37px;
+    letter-spacing: 2px;
+    padding: 103px 48px 102px 46px;
+    margin-top: 106px;
+  }
+
+  /* DestinationComponent */
+  .bg-destinations {
+    background-image: url("/public/assets/destination/background-destination-tablet.jpg");
+    background-position: center;
+  }
+  .pick-destination {
+    font-size: 1.25rem;
+    letter-spacing: 3.375px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .pick-destination span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 3.375px;
+    line-height: 24px;
+  }
+  .map-destination {
+    display: inline-block;
+  }
+  .text-destinations {
+    padding-top: 6.8em;
+    text-align: center;
+  }
+  .img-destination {
+    margin-top: 40px;
+    margin-bottom: 53px;
+    width: 300px;
+    height: 300px;
+  }
+  .map-destination {
+    width: 11.5%;
+  }
+  .map-destination ul li {
+    color: #fff;
+    letter-spacing: 2.7px;
+    padding-bottom: .5em;
+  }
+  .map-destination ul li:hover {
+    border-bottom: 4px solid #fff;
+  }
+  .name-destination {
+    font-size: 5rem;
+    line-height: 92px;
+    margin-top: 10px;
+  }
+  .description {
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .top-line {
+    border-top: 1px solid #383B4B;
+    padding: 1.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .avg-distance {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.3625px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-bottom: 0em;
+  }
+  .destination-distance {
+    color: #fff;
+    font-family: 'Bellefair', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  .est-travel {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.3625px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-top: 0em;
+    padding-bottom: 12px;
+  }
+  .destination-travel {
+    color: #fff;
+    font-family: 'Bellefair', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  /* Crew Component */
+  .bg-crew {
+    background-image: url("/public/assets/crew/background-crew-tablet.jpg");
+  }
+  .text-crew {
+    padding-top: 8.5em;
+    /* position: relative; */
+    /* background-color: red; */
+  }
+  .meet-crew-p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+  }
+  .meet-crew-p span {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;                
+    opacity: 0.25;
+  }
+  .image-crew {
+    display: none;
+  }
+  .border-div {
+    border-top: none;
+  }
+  .map-div-crew {
+    display: inline-block;
+    width: 5%;
+  }
+  .map-div-crew button {
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    padding: .5em;
+    opacity: 0.17;
+    z-index: 1;
+    position: absolute;
+    top: 45%
+  }
+  .map-div-crew button:hover {
+    opacity: 1;
+  }
+  .role-crew {
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin-top: 1em;
+  }
+  .role-name {
+    font-size: 2.5rem;
+    line-height: 46px;
+  }
+  .role-bio {
+    line-height: 26px;
+    color: #D0D6F9;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .image-crew-tablet {
+    display: block;
+    width: 360px;
+    position: absolute;
+    top: 58%;
+    left: 30%;
+  }
+
+  /* TechComponent */ 
+  .tech-bg {
+    background-image: url("/public/assets/technology/background-technology-tablet.jpg");
+  }
+  .tech-text {
+    padding-top: 8.5em;
+  }
+  .space-launch-p {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+    padding-left: 2.1em;
+  }
+  .space-launch-p span {
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .tech-image {
+    margin-top: 2em;
+  }
+  .map-div-tech {
+    display: inline-block;
+    width: 10%;
+  }
+  .map-div-tech button {
+    border: 1px solid #fff;
+    font-size: 1.5rem;
+    width: 58px;
+    height: 58px;
+    margin: 36px 0 24px 0;
+  }
+  .map-div-tech button:hover {
+    background-color: #fff;
+    color: #0B0D17;
+  }
+  .terminology {
+    letter-spacing: 2.7px;
+    line-height: 19px;
+  }
+  .name {
+    font-size: 2.5rem;
+    line-height: 56px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
+  .description {
+    color: #D0D6F9;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+    margin: 16px auto 0 auto ;
+    width: 60%;
+  }
 }
