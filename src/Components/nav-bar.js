@@ -17,7 +17,6 @@ export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
             </li>
             <li>
               <Link to="destinations">
-                {" "}
                 <span className="span-desktop">01</span> Destination
               </Link>
             </li>
