@@ -37,12 +37,16 @@ export const CrewComponent = () => {
               </div>
             ))}
           </div>
-          <div>
-            <p className="role-crew">{role}</p>
-            <h2 className="role-name">{name}</h2>
-            <p className="role-bio">{bio}</p>
+          <div className="crew-destop-row">
+            <div className="crew-text">
+              <p className="role-crew">{role}</p>
+              <h2 className="role-name">{name}</h2>
+              <p className="role-bio">{bio}</p>
+            </div>
+            <div>
+              <img src={image} alt="" className="image-crew-tablet" />
+            </div>
           </div>
-          <img src={image} alt="" className="image-crew-tablet" />
         </div>
       </div>
     </div>
