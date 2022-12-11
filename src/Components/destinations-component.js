@@ -18,8 +18,8 @@ export const DestinationComponent = () => {
           <p className="pick-destination">
             <span>01</span> Pick your destination
           </p>
-          <img src={image} alt="" className="img-destination" />
-          <div>
+          <div className="destination-row">
+            <img src={image} alt="" className="img-destination" />
             {data.destinations.map((item) => (
               <div key={item.name} className="map-destination">
                 <ul>
@@ -39,18 +39,18 @@ export const DestinationComponent = () => {
                 </ul>
               </div>
             ))}
-          </div>
-          <div>
-            <h1 className="name-destination">{name}</h1>
-            <p className="description">{description}</p>
-            <div className="top-line">
-              <div>
-                <p className="avg-distance">avg. distance</p>
-                <h2 className="destination-distance">{distance}</h2>
-              </div>
-              <div>
-                <p className="est-travel">Est. Travel Time</p>
-                <h2 className="destination-travel">{travel}</h2>
+            <div className="desktop-destination-col">
+              <h1 className="name-destination">{name}</h1>
+              <p className="destination-description">{description}</p>
+              <div className="top-line">
+                <div>
+                  <p className="avg-distance">avg. distance</p>
+                  <h2 className="destination-distance">{distance}</h2>
+                </div>
+                <div>
+                  <p className="est-travel">Est. Travel Time</p>
+                  <h2 className="destination-travel">{travel}</h2>
+                </div>
               </div>
             </div>
           </div>

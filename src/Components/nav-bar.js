@@ -7,19 +7,29 @@ export const NavBarComponent = ({ showMenu, menuClickHandler }) => {
         <div>
           <img src="assets/shared/logo.svg" alt="" className="nav-logo" />
         </div>
+        <div className="nav-border"></div>
         <div className="desktop-menu">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <span className="span-desktop">00</span> Home
+              </Link>
             </li>
             <li>
-              <Link to="destinations">Destination</Link>
+              <Link to="destinations">
+                {" "}
+                <span className="span-desktop">01</span> Destination
+              </Link>
             </li>
             <li>
-              <Link to="crew">Crew</Link>
+              <Link to="crew">
+                <span className="span-desktop">02</span> Crew
+              </Link>
             </li>
             <li>
-              <Link to="technology">Technology</Link>
+              <Link to="technology">
+                <span className="span-desktop">03</span> Technology
+              </Link>
             </li>
           </ul>
         </div>
